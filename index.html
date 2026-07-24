@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100 Matemáticos Dijeron — Nivel 1</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <main class="app">
+    <section id="inicio" class="pantalla activa inicio">
+      <div class="luces" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="logo-wrap">
+        <div class="logo-ring">
+          <div class="logo-core">
+            <span class="logo-100">100</span>
+            <span class="logo-mini">MATEMÁTICOS</span>
+          </div>
+        </div>
+      </div>
+
+      <h1>MATEMÁTICOS DIJERON</h1>
+      <p class="subtitulo">Nivel 1 · Primero y Segundo Básico</p>
+
+      <div class="config card-glass">
+        <label>
+          <span>Equipo 1</span>
+          <input id="nombre1" value="Equipo Azul" maxlength="24">
+        </label>
+        <div class="versus">VS</div>
+        <label>
+          <span>Equipo 2</span>
+          <input id="nombre2" value="Equipo Dorado" maxlength="24">
+        </label>
+      </div>
+
+      <button id="btnIniciar" class="btn btn-primary btn-xl">INICIAR JUEGO</button>
+      <small class="ayuda">F11 para pantalla completa</small>
+    </section>
+
+    <section id="presentacionRonda" class="pantalla presentacion-ronda">
+      <div class="round-burst"></div>
+      <p id="presentacionNumero" class="round-kicker">RONDA 1</p>
+      <h2 id="presentacionCategoria">Números y operaciones</h2>
+      <div class="round-line"></div>
+      <div class="round-matchup">
+        <span id="presentacionEquipo1">Equipo Azul</span>
+        <strong>VS</strong>
+        <span id="presentacionEquipo2">Equipo Dorado</span>
+      </div>
+    </section>
+
+    <section id="juego" class="pantalla juego">
+      <header class="topbar">
+        <div class="score-card equipo-uno">
+          <span id="equipo1Nombre">Equipo Azul</span>
+          <strong id="puntos1">0</strong>
+          <div id="errores1" class="mini-errors"></div>
+        </div>
+
+        <div class="round-center">
+          <span id="rondaTexto">RONDA 1</span>
+          <small id="categoriaTexto">Números y operaciones</small>
+          <div id="multiplicador" class="badge">PUNTOS NORMALES</div>
+        </div>
+
+        <div class="score-card equipo-dos">
+          <span id="equipo2Nombre">Equipo Dorado</span>
+          <strong id="puntos2">0</strong>
+          <div id="errores2" class="mini-errors"></div>
+        </div>
+      </header>
+
+      <section class="question-stage">
+        <div class="question-frame">
+          <span class="question-label">LA PREGUNTA ES...</span>
+          <h2 id="preguntaTexto"></h2>
+        </div>
+      </section>
+
+      <section id="tablero" class="board" aria-live="polite"></section>
+
+      <section class="round-score">
+        <span>PUNTOS DE LA RONDA</span>
+        <strong id="puntosRonda">0</strong>
+      </section>
+
+      <section class="controls-panel">
+        <div class="control-group">
+          <button id="quitarError1" class="btn btn-light">− Error E1</button>
+          <button id="error1" class="btn btn-danger">+ Error E1</button>
+          <button id="asignar1" class="btn btn-team">Asignar a E1</button>
+        </div>
+        <div class="control-group central">
+          <button id="nuevaPregunta" class="btn">Cambiar pregunta</button>
+          <button id="pausarJuego" class="btn btn-pause">Pausar juego</button>
+          <button id="siguiente" class="btn btn-primary">Siguiente ronda</button>
+        </div>
+        <div class="control-group">
+          <button id="asignar2" class="btn btn-team">Asignar a E2</button>
+          <button id="error2" class="btn btn-danger">+ Error E2</button>
+          <button id="quitarError2" class="btn btn-light">− Error E2</button>
+        </div>
+      </section>
+    </section>
+
+    <section id="final" class="pantalla final">
+      <header class="topbar">
+        <div class="score-card equipo-uno">
+          <span id="finalNombre1"></span>
+          <strong id="finalPuntos1">0</strong>
+        </div>
+
+        <div class="round-center">
+          <span>RONDA 6</span>
+          <small>DESAFÍO MATEMÁTICO</small>
+          <div class="badge badge-double">PUNTOS DOBLES</div>
+        </div>
+
+        <div class="score-card equipo-dos">
+          <span id="finalNombre2"></span>
+          <strong id="finalPuntos2">0</strong>
+        </div>
+      </header>
+
+      <section class="final-card">
+        <div class="final-head">
+          <span id="contadorEjercicio">EJERCICIO 1 DE 5</span>
+          <div class="timer-ring">
+            <strong id="tiempo">60</strong>
+          </div>
+        </div>
+
+        <h2 id="ejercicioTexto"></h2>
+        <div id="opciones" class="options-grid"></div>
+        <div id="explicacion" class="explanation"></div>
+      </section>
+
+      <section class="controls-panel final-controls">
+        <button id="iniciarTiempo" class="btn">Iniciar tiempo</button>
+        <button id="reiniciarTiempo" class="btn">Reiniciar</button>
+        <button id="acierto1" class="btn btn-team">+40 a E1</button>
+        <button id="acierto2" class="btn btn-team">+40 a E2</button>
+        <button id="siguienteEjercicio" class="btn btn-primary">Siguiente ejercicio</button>
+      </section>
+    </section>
+
+    <section id="ganador" class="pantalla winner">
+      <canvas id="confetti"></canvas>
+      <div class="winner-content">
+        <div class="trophy">🏆</div>
+        <p class="winner-kicker">TENEMOS UN GANADOR</p>
+        <h1 id="ganadorNombre"></h1>
+        <p class="winner-sub">¡CAMPEÓN DE 100 MATEMÁTICOS DIJERON!</p>
+        <div id="marcadorFinal" class="final-score"></div>
+        <button id="reiniciarJuego" class="btn btn-primary btn-xl">JUGAR DE NUEVO</button>
+      </div>
+    </section>
+  </main>
+
+  <section id="pausa" class="pantalla pausa">
+    <div class="pause-box">
+      <div class="pause-icon">⏸</div>
+      <h1>JUEGO EN PAUSA</h1>
+      <p>Espere instrucciones del moderador.</p>
+      <button id="reanudarJuego" class="btn btn-primary btn-xl">REANUDAR JUEGO</button>
+    </div>
+  </section>
+
+  <div id="confirmacion" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-card">
+      <h3>Confirmar asignación</h3>
+      <p id="confirmacionTexto"></p>
+      <div class="modal-actions">
+        <button id="cancelarAsignacion" class="btn">Cancelar</button>
+        <button id="confirmarAsignacion" class="btn btn-primary">Sí, asignar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="errorOverlay" class="error-overlay" aria-hidden="true">
+    <div class="giant-x">✕</div>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="preguntas.js"></script>
+  <script src="juego.js"></script>
+</body>
+</html>
