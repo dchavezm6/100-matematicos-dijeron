@@ -12,6 +12,7 @@ let ejercicio = 0;
 let timer = null;
 let tiempo = 60;
 let asignadoFinal = [false, false];
+let rondaCerrada = false;
 
 function mostrar(id){
   document.querySelectorAll(".pantalla").forEach(p => p.classList.remove("activa"));
@@ -87,6 +88,7 @@ function cargarRonda(){
   const cat = categorias[ronda];
   preguntaActual = elegirPregunta(cat);
   puntosRonda = 0;
+  rondaCerrada = false;
   errores = [0,0];
 
   $("rondaTexto").textContent = `RONDA ${ronda+1}`;
@@ -116,6 +118,13 @@ function cargarRonda(){
         </span>
       </span>`;
     btn.addEventListener("click", () => {
+      // Después de asignar los puntos, las respuestas restantes se muestran
+      // únicamente para explicación y ya no modifican el puntaje de la ronda.
+      if(rondaCerrada){
+        btn.classList.toggle("revealed");
+        return;
+      }
+
       const anterior = puntosRonda;
       if(btn.classList.contains("revealed")){
         btn.classList.remove("revealed");
@@ -203,6 +212,7 @@ function asignar(eq){
   puntos[eq] += puntosRonda;
   const ganados = puntosRonda;
   puntosRonda = 0;
+  rondaCerrada = true;
   animateNumber($("puntosRonda"), ganados, 0, 350);
   actualizarMarcador(true, anteriores);
   toast(`${ganados} puntos asignados`);
