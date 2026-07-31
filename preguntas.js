@@ -2,37 +2,70 @@ window.DATOS_JUEGO = {
   "categorias": {
     "Números y operaciones": [
       {
-        "pregunta": "Mencione una operación matemática.",
+        "pregunta": "Mencione un número impar menor que 15.",
         "respuestas": [
           [
-            "Suma",
+            "1",
             30
           ],
           [
-            "Resta",
+            "3",
             25
           ],
           [
-            "Multiplicación",
+            "5",
             20
           ],
           [
-            "División",
+            "7",
             15
           ],
           [
-            "Potenciación",
+            "9",
             7
           ],
           [
-            "Raíz",
+            "11",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un número primo menor que 20.",
+        "pregunta": "Mencione un múltiplo de 4 menor que 30.",
         "respuestas": [
+          [
+            "4",
+            30
+          ],
+          [
+            "8",
+            25
+          ],
+          [
+            "12",
+            20
+          ],
+          [
+            "16",
+            15
+          ],
+          [
+            "20",
+            7
+          ],
+          [
+            "24",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione un divisor de 18.",
+        "respuestas": [
+          [
+            "1",
+            30
+          ],
           [
             "2",
             25
@@ -42,44 +75,36 @@ window.DATOS_JUEGO = {
             20
           ],
           [
-            "5",
-            17
+            "6",
+            15
           ],
           [
-            "7",
-            14
+            "9",
+            7
           ],
           [
-            "11",
-            11
-          ],
-          [
-            "13",
-            8
-          ],
-          [
-            "17",
-            5
+            "18",
+            3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un múltiplo de 5.",
+        "pregunta": "Mencione un cuadrado perfecto menor que 40.",
         "respuestas": [
           [
-            "10",
+            "1",
             30
           ],
           [
-            "5",
+            "4",
             25
           ],
           [
-            "15",
+            "9",
             20
           ],
           [
-            "20",
+            "16",
             15
           ],
           [
@@ -87,46 +112,42 @@ window.DATOS_JUEGO = {
             7
           ],
           [
-            "30",
+            "36",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un número par menor que 12.",
+        "pregunta": "Mencione una fracción equivalente a un medio.",
         "respuestas": [
           [
-            "2",
+            "2/4",
+            30
+          ],
+          [
+            "3/6",
             25
           ],
           [
-            "4",
+            "4/8",
             20
           ],
           [
-            "6",
-            17
+            "5/10",
+            15
           ],
           [
-            "8",
-            14
+            "6/12",
+            7
           ],
           [
-            "10",
-            11
-          ],
-          [
-            "0",
-            8
-          ],
-          [
-            "12",
-            5
+            "10/20",
+            3
           ]
         ]
       },
       {
-        "pregunta": "Mencione una propiedad de la suma.",
+        "pregunta": "Mencione una propiedad de la multiplicación.",
         "respuestas": [
           [
             "Conmutativa",
@@ -137,106 +158,73 @@ window.DATOS_JUEGO = {
             25
           ],
           [
-            "Elemento neutro",
+            "Distributiva",
             20
           ],
           [
-            "Clausura",
+            "Elemento neutro",
             15
           ],
           [
-            "Inverso aditivo",
+            "Clausura",
+            10
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione un símbolo usado en la numeración romana.",
+        "respuestas": [
+          [
+            "I",
+            30
+          ],
+          [
+            "V",
+            25
+          ],
+          [
+            "X",
+            20
+          ],
+          [
+            "L",
+            15
+          ],
+          [
+            "C",
             7
           ],
           [
-            "Distributiva",
+            "D",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione una forma de representar una fracción.",
-        "respuestas": [
-          [
-            "Numerador y denominador",
-            35
-          ],
-          [
-            "Decimal",
-            25
-          ],
-          [
-            "Porcentaje",
-            20
-          ],
-          [
-            "Gráfica",
-            12
-          ],
-          [
-            "Razón",
-            8
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un divisor de 24.",
+        "pregunta": "Mencione un número primo menor que 15.",
         "respuestas": [
           [
             "2",
-            25
-          ],
-          [
-            "3",
-            20
-          ],
-          [
-            "4",
-            17
-          ],
-          [
-            "6",
-            14
-          ],
-          [
-            "8",
-            11
-          ],
-          [
-            "12",
-            8
-          ],
-          [
-            "24",
-            5
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un número entero negativo.",
-        "respuestas": [
-          [
-            "−1",
             30
           ],
           [
-            "−2",
+            "3",
             25
           ],
           [
-            "−5",
+            "5",
             20
           ],
           [
-            "−10",
+            "7",
             15
           ],
           [
-            "−3",
+            "11",
             7
           ],
           [
-            "−100",
+            "13",
             3
           ]
         ]
@@ -244,43 +232,60 @@ window.DATOS_JUEGO = {
     ],
     "Geometría y medición": [
       {
-        "pregunta": "Mencione una figura geométrica.",
+        "pregunta": "Mencione un cuadrilátero.",
         "respuestas": [
           [
-            "Círculo",
+            "Cuadrado",
             30
           ],
           [
-            "Cuadrado",
+            "Rectángulo",
             25
           ],
           [
-            "Triángulo",
+            "Rombo",
             20
           ],
           [
-            "Rectángulo",
+            "Trapecio",
             15
           ],
           [
-            "Rombo",
+            "Romboide",
             7
           ],
           [
-            "Trapecio",
+            "Trapezoide",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un tipo de ángulo.",
+        "pregunta": "Mencione un tipo de triángulo según sus lados.",
         "respuestas": [
           [
-            "Recto",
+            "Equilátero",
+            40
+          ],
+          [
+            "Isósceles",
+            35
+          ],
+          [
+            "Escaleno",
+            25
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione un tipo de ángulo según su medida.",
+        "respuestas": [
+          [
+            "Agudo",
             30
           ],
           [
-            "Agudo",
+            "Recto",
             25
           ],
           [
@@ -360,113 +365,88 @@ window.DATOS_JUEGO = {
         ]
       },
       {
-        "pregunta": "Mencione un instrumento utilizado para medir.",
+        "pregunta": "Mencione una unidad de capacidad.",
         "respuestas": [
           [
-            "Regla",
+            "Litro",
             30
           ],
           [
-            "Cinta métrica",
+            "Mililitro",
             25
           ],
           [
-            "Metro",
+            "Galón",
             20
           ],
           [
-            "Transportador",
+            "Taza",
             15
           ],
           [
-            "Balanza",
+            "Botella",
             7
           ],
           [
-            "Cronómetro",
+            "Barril",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un polígono.",
+        "pregunta": "Mencione una parte de un círculo.",
         "respuestas": [
           [
-            "Triángulo",
+            "Centro",
             30
           ],
           [
-            "Cuadrado",
+            "Radio",
             25
           ],
           [
-            "Pentágono",
+            "Diámetro",
             20
           ],
           [
-            "Hexágono",
+            "Cuerda",
             15
           ],
           [
-            "Octágono",
+            "Arco",
             7
           ],
           [
-            "Decágono",
+            "Circunferencia",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione una parte de un triángulo.",
+        "pregunta": "Mencione una unidad de masa.",
         "respuestas": [
           [
-            "Lado",
-            35
-          ],
-          [
-            "Vértice",
-            25
-          ],
-          [
-            "Ángulo",
-            20
-          ],
-          [
-            "Base",
-            12
-          ],
-          [
-            "Altura",
-            8
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione algo que pueda medirse.",
-        "respuestas": [
-          [
-            "Longitud",
+            "Kilogramo",
             30
           ],
           [
-            "Peso",
+            "Gramo",
             25
           ],
           [
-            "Tiempo",
+            "Libra",
             20
           ],
           [
-            "Temperatura",
+            "Onza",
             15
           ],
           [
-            "Área",
+            "Tonelada",
             7
           ],
           [
-            "Volumen",
+            "Miligramo",
             3
           ]
         ]
@@ -474,11 +454,11 @@ window.DATOS_JUEGO = {
     ],
     "Álgebra y patrones": [
       {
-        "pregunta": "Mencione una letra utilizada como incógnita.",
+        "pregunta": "Mencione una letra que se use como variable.",
         "respuestas": [
           [
             "x",
-            35
+            30
           ],
           [
             "y",
@@ -490,16 +470,141 @@ window.DATOS_JUEGO = {
           ],
           [
             "b",
-            12
+            15
           ],
           [
             "n",
-            8
+            7
+          ],
+          [
+            "m",
+            3
           ]
         ]
       },
       {
-        "pregunta": "Mencione una operación que aparezca en una expresión algebraica.",
+        "pregunta": "Mencione un signo de comparación.",
+        "respuestas": [
+          [
+            "Igual que",
+            30
+          ],
+          [
+            "Mayor que",
+            25
+          ],
+          [
+            "Menor que",
+            20
+          ],
+          [
+            "Mayor o igual que",
+            15
+          ],
+          [
+            "Menor o igual que",
+            10
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione un elemento de un término algebraico.",
+        "respuestas": [
+          [
+            "Coeficiente",
+            30
+          ],
+          [
+            "Variable",
+            25
+          ],
+          [
+            "Exponente",
+            20
+          ],
+          [
+            "Signo",
+            15
+          ],
+          [
+            "Parte literal",
+            10
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione una clase de patrón.",
+        "respuestas": [
+          [
+            "Creciente",
+            30
+          ],
+          [
+            "Decreciente",
+            25
+          ],
+          [
+            "Repetitivo",
+            20
+          ],
+          [
+            "Alternado",
+            15
+          ],
+          [
+            "Numérico",
+            10
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione una sucesión numérica conocida.",
+        "respuestas": [
+          [
+            "Números naturales",
+            30
+          ],
+          [
+            "Números pares",
+            25
+          ],
+          [
+            "Números impares",
+            20
+          ],
+          [
+            "Múltiplos de 5",
+            15
+          ],
+          [
+            "Fibonacci",
+            7
+          ],
+          [
+            "Cuadrados perfectos",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione un símbolo de agrupación.",
+        "respuestas": [
+          [
+            "Paréntesis",
+            40
+          ],
+          [
+            "Corchetes",
+            35
+          ],
+          [
+            "Llaves",
+            25
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione una operación que pueda aparecer en una ecuación.",
         "respuestas": [
           [
             "Suma",
@@ -522,178 +627,33 @@ window.DATOS_JUEGO = {
             7
           ],
           [
-            "Raíz",
+            "Radicación",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un elemento de una expresión algebraica.",
+        "pregunta": "Mencione una forma de comprobar la solución de una ecuación.",
         "respuestas": [
           [
-            "Variable",
+            "Sustituir el valor",
             30
           ],
           [
-            "Coeficiente",
+            "Resolver ambos miembros",
             25
           ],
           [
-            "Exponente",
+            "Simplificar",
             20
           ],
           [
-            "Término",
+            "Comparar resultados",
             15
           ],
           [
-            "Constante",
-            7
-          ],
-          [
-            "Signo",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un tipo de patrón.",
-        "respuestas": [
-          [
-            "Numérico",
-            30
-          ],
-          [
-            "Geométrico",
-            25
-          ],
-          [
-            "Repetitivo",
-            20
-          ],
-          [
-            "Creciente",
-            15
-          ],
-          [
-            "Decreciente",
-            7
-          ],
-          [
-            "Alternado",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione una sucesión conocida.",
-        "respuestas": [
-          [
-            "Números naturales",
-            30
-          ],
-          [
-            "Pares",
-            25
-          ],
-          [
-            "Impares",
-            20
-          ],
-          [
-            "Múltiplos de 5",
-            15
-          ],
-          [
-            "Fibonacci",
-            7
-          ],
-          [
-            "Cuadrados perfectos",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione algo que pueda representar una letra en Matemática.",
-        "respuestas": [
-          [
-            "Número desconocido",
-            35
-          ],
-          [
-            "Variable",
-            25
-          ],
-          [
-            "Medida",
-            20
-          ],
-          [
-            "Cantidad",
-            12
-          ],
-          [
-            "Constante",
-            8
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione una forma de resolver una ecuación.",
-        "respuestas": [
-          [
-            "Despejar",
-            30
-          ],
-          [
-            "Sumar o restar",
-            25
-          ],
-          [
-            "Multiplicar o dividir",
-            20
-          ],
-          [
-            "Sustituir",
-            15
-          ],
-          [
-            "Comprobar",
-            7
-          ],
-          [
-            "Graficar",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un signo usado en álgebra.",
-        "respuestas": [
-          [
-            "Igual",
-            30
-          ],
-          [
-            "Más",
-            25
-          ],
-          [
-            "Menos",
-            20
-          ],
-          [
-            "Multiplicación",
-            15
-          ],
-          [
-            "División",
-            7
-          ],
-          [
-            "Mayor que",
-            3
+            "Verificar la igualdad",
+            10
           ]
         ]
       }
@@ -715,11 +675,11 @@ window.DATOS_JUEGO = {
             20
           ],
           [
-            "Histograma",
+            "Pictograma",
             15
           ],
           [
-            "Pictograma",
+            "Histograma",
             7
           ],
           [
@@ -732,29 +692,21 @@ window.DATOS_JUEGO = {
         "pregunta": "Mencione una medida de tendencia central.",
         "respuestas": [
           [
-            "Media",
-            35
+            "Media aritmética",
+            40
           ],
           [
             "Mediana",
-            25
+            35
           ],
           [
             "Moda",
-            20
-          ],
-          [
-            "Promedio",
-            12
-          ],
-          [
-            "Media ponderada",
-            8
+            25
           ]
         ]
       },
       {
-        "pregunta": "Mencione una forma de recopilar datos.",
+        "pregunta": "Mencione una técnica para recopilar datos.",
         "respuestas": [
           [
             "Encuesta",
@@ -783,57 +735,65 @@ window.DATOS_JUEGO = {
         ]
       },
       {
-        "pregunta": "Mencione un resultado posible al lanzar un dado.",
+        "pregunta": "Mencione un resultado posible al lanzar un dado común.",
         "respuestas": [
           [
             "1",
-            25
-          ],
-          [
-            "2",
-            20
-          ],
-          [
-            "3",
-            17
-          ],
-          [
-            "4",
-            14
-          ],
-          [
-            "5",
-            11
-          ],
-          [
-            "6",
-            8
-          ],
-          [
-            "Número par",
-            5
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione algo que puede pasar al lanzar una moneda.",
-        "respuestas": [
-          [
-            "Cara",
-            50
-          ],
-          [
-            "Escudo",
             30
           ],
           [
-            "Que caiga de canto",
+            "2",
+            25
+          ],
+          [
+            "3",
             20
+          ],
+          [
+            "4",
+            15
+          ],
+          [
+            "5",
+            7
+          ],
+          [
+            "6",
+            3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un dato que podría recopilarse en un salón.",
+        "pregunta": "Mencione un evento que pueda ocurrir al lanzar un dado.",
+        "respuestas": [
+          [
+            "Obtener un número par",
+            30
+          ],
+          [
+            "Obtener un número impar",
+            25
+          ],
+          [
+            "Obtener un número mayor que 3",
+            20
+          ],
+          [
+            "Obtener un número menor que 4",
+            15
+          ],
+          [
+            "Obtener un 6",
+            7
+          ],
+          [
+            "Obtener un número primo",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione un dato numérico que pueda recopilarse de estudiantes.",
         "respuestas": [
           [
             "Edad",
@@ -848,15 +808,15 @@ window.DATOS_JUEGO = {
             20
           ],
           [
-            "Número de hermanos",
+            "Calificación",
             15
           ],
           [
-            "Nota",
+            "Número de hermanos",
             7
           ],
           [
-            "Color favorito",
+            "Número de ausencias",
             3
           ]
         ]
@@ -865,23 +825,23 @@ window.DATOS_JUEGO = {
         "pregunta": "Mencione una palabra relacionada con probabilidad.",
         "respuestas": [
           [
-            "Posible",
+            "Azar",
             30
           ],
           [
-            "Imposible",
+            "Evento",
             25
           ],
           [
-            "Seguro",
+            "Posible",
             20
           ],
           [
-            "Azar",
+            "Seguro",
             15
           ],
           [
-            "Evento",
+            "Imposible",
             7
           ],
           [
@@ -914,7 +874,7 @@ window.DATOS_JUEGO = {
             7
           ],
           [
-            "Frecuencia",
+            "Tabla de frecuencias",
             3
           ]
         ]
@@ -951,130 +911,101 @@ window.DATOS_JUEGO = {
         ]
       },
       {
-        "pregunta": "Mencione una palabra que relacione con Matemática.",
-        "respuestas": [
-          [
-            "Números",
-            30
-          ],
-          [
-            "Operaciones",
-            25
-          ],
-          [
-            "Problemas",
-            20
-          ],
-          [
-            "Cálculo",
-            15
-          ],
-          [
-            "Fórmulas",
-            7
-          ],
-          [
-            "Geometría",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un instrumento utilizado en Matemática.",
+        "pregunta": "Mencione un instrumento utilizado en geometría.",
         "respuestas": [
           [
             "Regla",
             30
-          ],
-          [
-            "Calculadora",
-            25
           ],
           [
             "Compás",
-            20
+            25
           ],
           [
             "Transportador",
-            15
+            20
           ],
           [
             "Escuadra",
-            7
-          ],
-          [
-            "Ábaco",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione una situación cotidiana donde use Matemática.",
-        "respuestas": [
-          [
-            "Comprar",
-            30
-          ],
-          [
-            "Contar dinero",
-            25
-          ],
-          [
-            "Cocinar",
-            20
-          ],
-          [
-            "Medir",
             15
           ],
           [
-            "Viajar",
+            "Cartabón",
             7
           ],
           [
-            "Decir la hora",
+            "Cinta métrica",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione algo que se encuentre en una clase de Matemática.",
+        "pregunta": "Mencione una unidad de tiempo.",
         "respuestas": [
           [
-            "Pizarra",
+            "Segundo",
             30
           ],
           [
-            "Cuaderno",
+            "Minuto",
             25
           ],
           [
-            "Calculadora",
+            "Hora",
             20
           ],
           [
-            "Regla",
+            "Día",
             15
           ],
           [
-            "Libro",
+            "Semana",
             7
           ],
           [
-            "Fórmula",
+            "Mes",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione una profesión que utilice Matemática.",
+        "pregunta": "Mencione una situación cotidiana en la que se utilicen porcentajes.",
         "respuestas": [
           [
-            "Ingeniero",
+            "Descuentos",
             30
           ],
+          [
+            "Calificaciones",
+            25
+          ],
+          [
+            "Intereses",
+            20
+          ],
+          [
+            "Impuestos",
+            15
+          ],
+          [
+            "Encuestas",
+            7
+          ],
+          [
+            "Propinas",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione una profesión que utilice cálculos frecuentemente.",
+        "respuestas": [
           [
             "Contador",
+            30
+          ],
+          [
+            "Ingeniero",
             25
           ],
           [
@@ -1082,7 +1013,7 @@ window.DATOS_JUEGO = {
             20
           ],
           [
-            "Profesor",
+            "Profesor de Matemática",
             15
           ],
           [
@@ -1096,59 +1027,88 @@ window.DATOS_JUEGO = {
         ]
       },
       {
-        "pregunta": "Mencione una palabra usada al resolver un problema.",
+        "pregunta": "Mencione un objeto escolar que se utilice en Matemática.",
         "respuestas": [
           [
-            "Respuesta",
+            "Cuaderno",
             30
           ],
           [
-            "Procedimiento",
+            "Lápiz",
             25
           ],
           [
-            "Datos",
+            "Regla",
             20
           ],
           [
-            "Operación",
+            "Calculadora",
             15
           ],
           [
-            "Resultado",
+            "Compás",
             7
           ],
           [
-            "Comprobación",
+            "Transportador",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un lugar donde se use Matemática.",
+        "pregunta": "Mencione una acción que se realiza al resolver un problema matemático.",
         "respuestas": [
           [
-            "Escuela",
+            "Leer",
             30
           ],
           [
-            "Banco",
+            "Identificar datos",
             25
           ],
           [
-            "Tienda",
+            "Elegir una operación",
             20
           ],
           [
-            "Mercado",
+            "Calcular",
             15
           ],
           [
-            "Construcción",
+            "Comprobar",
             7
           ],
           [
-            "Hospital",
+            "Responder",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Mencione una rama de la Matemática.",
+        "respuestas": [
+          [
+            "Aritmética",
+            30
+          ],
+          [
+            "Álgebra",
+            25
+          ],
+          [
+            "Geometría",
+            20
+          ],
+          [
+            "Estadística",
+            15
+          ],
+          [
+            "Probabilidad",
+            7
+          ],
+          [
+            "Trigonometría",
             3
           ]
         ]
@@ -1157,59 +1117,59 @@ window.DATOS_JUEGO = {
   },
   "rondaFinal": [
     {
-      "pregunta": "¿Cuál es el resultado de 18 + 6 × 2?",
+      "pregunta": "María comió 1/4 de una pizza y Juan comió otro 1/4. ¿Qué fracción de la pizza comieron entre los dos?",
+      "opciones": [
+        "1/8",
+        "1/2",
+        "2/8",
+        "3/4"
+      ],
+      "correcta": 1,
+      "explicacion": "1/4 + 1/4 = 2/4, y 2/4 se simplifica a 1/2."
+    },
+    {
+      "pregunta": "Una caja contiene 12 cuadernos. Si se compran 4 cajas, ¿cuántos cuadernos hay en total?",
+      "opciones": [
+        "36",
+        "42",
+        "48",
+        "52"
+      ],
+      "correcta": 2,
+      "explicacion": "12 × 4 = 48."
+    },
+    {
+      "pregunta": "Un rectángulo mide 9 cm de largo y 6 cm de ancho. ¿Cuál es su área?",
+      "opciones": [
+        "15 cm²",
+        "30 cm²",
+        "54 cm²",
+        "60 cm²"
+      ],
+      "correcta": 2,
+      "explicacion": "Área = largo × ancho = 9 × 6 = 54 cm²."
+    },
+    {
+      "pregunta": "¿Qué número continúa la secuencia 4, 8, 16, 32, ___?",
       "opciones": [
         "48",
-        "30",
-        "36",
-        "24"
+        "56",
+        "64",
+        "72"
+      ],
+      "correcta": 2,
+      "explicacion": "Cada término es el doble del anterior: 32 × 2 = 64."
+    },
+    {
+      "pregunta": "Si en una bolsa hay 5 pelotas rojas y 3 azules, ¿qué color es más probable sacar sin ver?",
+      "opciones": [
+        "Azul",
+        "Roja",
+        "Los dos tienen la misma probabilidad",
+        "No se puede saber"
       ],
       "correcta": 1,
-      "explicacion": "Primero se multiplica: 6 × 2 = 12; luego 18 + 12 = 30."
-    },
-    {
-      "pregunta": "Un cuaderno cuesta Q12. ¿Cuánto cuestan 5 cuadernos?",
-      "opciones": [
-        "Q50",
-        "Q60",
-        "Q65",
-        "Q72"
-      ],
-      "correcta": 1,
-      "explicacion": "12 × 5 = 60."
-    },
-    {
-      "pregunta": "Un rectángulo mide 8 cm de largo y 3 cm de ancho. ¿Cuál es su área?",
-      "opciones": [
-        "11 cm²",
-        "22 cm²",
-        "24 cm²",
-        "48 cm²"
-      ],
-      "correcta": 2,
-      "explicacion": "Área = largo × ancho = 8 × 3 = 24 cm²."
-    },
-    {
-      "pregunta": "¿Qué número continúa la secuencia 3, 6, 9, 12, ___?",
-      "opciones": [
-        "13",
-        "14",
-        "15",
-        "16"
-      ],
-      "correcta": 2,
-      "explicacion": "La secuencia aumenta de 3 en 3."
-    },
-    {
-      "pregunta": "En una encuesta, 8 estudiantes prefieren fútbol, 5 básquetbol y 7 voleibol. ¿Cuántos estudiantes participaron?",
-      "opciones": [
-        "18",
-        "19",
-        "20",
-        "21"
-      ],
-      "correcta": 2,
-      "explicacion": "8 + 5 + 7 = 20."
+      "explicacion": "Hay más pelotas rojas que azules, por lo que es más probable sacar una roja."
     }
   ]
 };
