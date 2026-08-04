@@ -12,6 +12,8 @@ let ejercicio = 0;
 let timer = null;
 let tiempo = 60;
 let asignadoFinal = [false, false];
+let intentoFinal = 0;
+let ejercicioFinalResuelto = false;
 let rondaCerrada = false;
 
 function mostrar(id){
@@ -250,6 +252,8 @@ function cargarEjercicio(){
   $("tiempo").textContent = tiempo;
   $("contadorEjercicio").textContent = `EJERCICIO ${ejercicio+1} DE ${datos.rondaFinal.length}`;
   asignadoFinal = [false,false];
+  intentoFinal = 0;
+  ejercicioFinalResuelto = false;
 
   const e = datos.rondaFinal[ejercicio];
   $("ejercicioTexto").textContent = e.pregunta;
@@ -263,12 +267,40 @@ function cargarEjercicio(){
     btn.className = "option";
     btn.textContent = `${"ABCD"[i]}. ${op}`;
     btn.addEventListener("click", () => {
-      document.querySelectorAll(".option").forEach((x,j) => {
+      if(ejercicioFinalResuelto) return;
+
+      const opciones = [...document.querySelectorAll(".option")];
+
+      if(i === e.correcta){
+        ejercicioFinalResuelto = true;
+        clearInterval(timer);
+        opciones.forEach((x,j) => {
+          x.disabled = true;
+          if(j === e.correcta) x.classList.add("correct");
+        });
+        $("explicacion").textContent = e.explicacion;
+        toast(intentoFinal === 0 ? "¡Respuesta correcta!" : "¡El otro equipo respondió correctamente!");
+        return;
+      }
+
+      btn.classList.add("wrong");
+      btn.disabled = true;
+
+      if(intentoFinal === 0){
+        intentoFinal = 1;
+        $("explicacion").textContent = "Respuesta incorrecta. El otro equipo tiene una oportunidad para responder.";
+        toast("Oportunidad para el otro equipo");
+        return;
+      }
+
+      ejercicioFinalResuelto = true;
+      clearInterval(timer);
+      opciones.forEach((x,j) => {
         x.disabled = true;
         if(j === e.correcta) x.classList.add("correct");
-        else if(j === i) x.classList.add("wrong");
       });
-      $("explicacion").textContent = e.explicacion;
+      $("explicacion").textContent = `Ambos equipos fallaron. ${e.explicacion}`;
+      toast("Se muestra la respuesta correcta");
     });
     cont.appendChild(btn);
   });
