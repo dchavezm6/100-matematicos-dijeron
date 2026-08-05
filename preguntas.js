@@ -2,26 +2,84 @@ window.DATOS_JUEGO = {
   "categorias": {
     "Números y operaciones": [
       {
-        "pregunta": "Mencione un múltiplo positivo de 7 menor que 45.",
+        "pregunta": "Nombre un número primo mayor que 20 y menor que 50.",
+        "respuestas": [
+          [
+            "37",
+            30
+          ],
+          [
+            "23",
+            25
+          ],
+          [
+            "43",
+            20
+          ],
+          [
+            "29",
+            15
+          ],
+          [
+            "47",
+            7
+          ],
+          [
+            "31",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Identifique un cuadrado perfecto mayor que 10 y menor que 100.",
+        "respuestas": [
+          [
+            "64",
+            30
+          ],
+          [
+            "25",
+            25
+          ],
+          [
+            "81",
+            20
+          ],
+          [
+            "16",
+            15
+          ],
+          [
+            "49",
+            7
+          ],
+          [
+            "36",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Indique un divisor positivo de 42 mayor que 1.",
         "respuestas": [
           [
             "7",
             30
           ],
           [
-            "14",
+            "21",
             25
           ],
           [
-            "21",
+            "3",
             20
           ],
           [
-            "28",
+            "14",
             15
           ],
           [
-            "35",
+            "6",
             7
           ],
           [
@@ -31,26 +89,175 @@ window.DATOS_JUEGO = {
         ]
       },
       {
-        "pregunta": "Mencione un divisor positivo de 20.",
+        "pregunta": "Señale una fracción equivalente a 3/5.",
         "respuestas": [
           [
-            "1",
+            "12/20",
             30
           ],
           [
-            "2",
+            "6/10",
             25
           ],
           [
-            "4",
+            "18/30",
             20
           ],
           [
-            "5",
+            "9/15",
             15
           ],
           [
-            "10",
+            "15/25",
+            7
+          ],
+          [
+            "21/35",
+            3
+          ]
+        ]
+      }
+    ],
+    "Geometría y medición": [
+      {
+        "pregunta": "Nombre un cuadrilátero.",
+        "respuestas": [
+          [
+            "Rombo",
+            30
+          ],
+          [
+            "Trapecio",
+            25
+          ],
+          [
+            "Rectángulo",
+            20
+          ],
+          [
+            "Romboide",
+            15
+          ],
+          [
+            "Cuadrado",
+            7
+          ],
+          [
+            "Trapezoide",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Identifique una figura plana con al menos un eje de simetría.",
+        "respuestas": [
+          [
+            "Rombo",
+            30
+          ],
+          [
+            "Círculo",
+            25
+          ],
+          [
+            "Triángulo equilátero",
+            20
+          ],
+          [
+            "Rectángulo",
+            15
+          ],
+          [
+            "Cuadrado",
+            7
+          ],
+          [
+            "Trapecio isósceles",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Indique una unidad utilizada para medir longitud.",
+        "respuestas": [
+          [
+            "Kilómetro",
+            30
+          ],
+          [
+            "Milímetro",
+            25
+          ],
+          [
+            "Metro",
+            20
+          ],
+          [
+            "Centímetro",
+            15
+          ],
+          [
+            "Decímetro",
+            7
+          ],
+          [
+            "Pulgada",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Señale un cuerpo geométrico que tenga al menos una superficie curva.",
+        "respuestas": [
+          [
+            "Cono",
+            30
+          ],
+          [
+            "Esfera",
+            25
+          ],
+          [
+            "Cilindro",
+            20
+          ],
+          [
+            "Semiesfera",
+            15
+          ],
+          [
+            "Toro",
+            7
+          ],
+          [
+            "Ovoide",
+            3
+          ]
+        ]
+      }
+    ],
+    "Álgebra y patrones": [
+      {
+        "pregunta": "Nombre un término de la sucesión 4, 8, 12, 16, ... que sea menor que 30.",
+        "respuestas": [
+          [
+            "24",
+            30
+          ],
+          [
+            "8",
+            25
+          ],
+          [
+            "28",
+            20
+          ],
+          [
+            "16",
+            15
+          ],
+          [
+            "4",
             7
           ],
           [
@@ -60,43 +267,22 @@ window.DATOS_JUEGO = {
         ]
       },
       {
-        "pregunta": "Mencione una fracción propia con denominador 5.",
+        "pregunta": "Identifique un número entero perteneciente al intervalo −3 ≤ x < 4.",
         "respuestas": [
           [
-            "1/5",
+            "2",
             30
           ],
-          [
-            "2/5",
-            25
-          ],
-          [
-            "3/5",
-            23
-          ],
-          [
-            "4/5",
-            22
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un número entero entre −3 y 3, sin incluir el cero.",
-        "respuestas": [
           [
             "−1",
-            30
-          ],
-          [
-            "1",
             25
           ],
           [
-            "−2",
+            "3",
             20
           ],
           [
-            "2",
+            "0",
             15
           ],
           [
@@ -104,235 +290,65 @@ window.DATOS_JUEGO = {
             7
           ],
           [
-            "3",
-            3
-          ]
-        ]
-      }
-    ],
-    "Geometría y medición": [
-      {
-        "pregunta": "Mencione un polígono que tenga entre 3 y 8 lados.",
-        "respuestas": [
-          [
-            "Triángulo",
-            30
-          ],
-          [
-            "Cuadrilátero",
-            25
-          ],
-          [
-            "Pentágono",
-            20
-          ],
-          [
-            "Hexágono",
-            15
-          ],
-          [
-            "Heptágono",
-            7
-          ],
-          [
-            "Octágono",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione una unidad utilizada para medir superficie.",
-        "respuestas": [
-          [
-            "Metro cuadrado",
-            30
-          ],
-          [
-            "Centímetro cuadrado",
-            25
-          ],
-          [
-            "Kilómetro cuadrado",
-            20
-          ],
-          [
-            "Milímetro cuadrado",
-            15
-          ],
-          [
-            "Decímetro cuadrado",
-            7
-          ],
-          [
-            "Hectárea",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un elemento o dimensión de un prisma rectangular.",
-        "respuestas": [
-          [
-            "Cara",
-            30
-          ],
-          [
-            "Arista",
-            25
-          ],
-          [
-            "Vértice",
-            20
-          ],
-          [
-            "Largo",
-            15
-          ],
-          [
-            "Ancho",
-            7
-          ],
-          [
-            "Altura",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione una relación que pueden tener dos rectas en un plano.",
-        "respuestas": [
-          [
-            "Paralelas",
-            30
-          ],
-          [
-            "Perpendiculares",
-            25
-          ],
-          [
-            "Secantes",
-            23
-          ],
-          [
-            "Coincidentes",
-            22
-          ]
-        ]
-      }
-    ],
-    "Álgebra y patrones": [
-      {
-        "pregunta": "Mencione una solución entera de la desigualdad −2 ≤ x < 4.",
-        "respuestas": [
-          [
-            "−2",
-            30
-          ],
-          [
-            "−1",
-            25
-          ],
-          [
-            "0",
-            20
-          ],
-          [
             "1",
-            15
-          ],
-          [
-            "2",
-            7
-          ],
-          [
-            "3",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione uno de los primeros seis términos de la sucesión 3, 6, 12, 24, ...",
+        "pregunta": "Indique un elemento que puede aparecer en una expresión algebraica.",
         "respuestas": [
-          [
-            "3",
-            30
-          ],
-          [
-            "6",
-            25
-          ],
-          [
-            "12",
-            20
-          ],
-          [
-            "24",
-            15
-          ],
-          [
-            "48",
-            7
-          ],
-          [
-            "96",
-            3
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un elemento que aparezca en la ecuación 4x + 7 = 19.",
-        "respuestas": [
-          [
-            "Variable",
-            30
-          ],
           [
             "Coeficiente",
+            30
+          ],
+          [
+            "Exponente",
             25
           ],
           [
-            "Constante",
+            "Variable",
             20
           ],
           [
-            "Signo de igualdad",
+            "Signo",
             15
           ],
           [
-            "Primer miembro",
+            "Constante",
             7
           ],
           [
-            "Segundo miembro",
+            "Término",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un nombre que recibe un monomio según su grado.",
+        "pregunta": "Señale una operación que puede realizarse con expresiones algebraicas.",
         "respuestas": [
           [
-            "Constante",
+            "Multiplicación",
             30
           ],
           [
-            "Lineal",
+            "Suma",
             25
           ],
           [
-            "Cuadrático",
+            "División",
             20
           ],
           [
-            "Cúbico",
+            "Resta",
             15
           ],
           [
-            "Cuártico",
+            "Simplificación",
             7
           ],
           [
-            "Quíntico",
+            "Sustitución",
             3
           ]
         ]
@@ -340,105 +356,117 @@ window.DATOS_JUEGO = {
     ],
     "Estadística y probabilidad": [
       {
-        "pregunta": "Mencione un tipo de frecuencia utilizado en Estadística.",
+        "pregunta": "Nombre un dato cuantitativo que pueda obtenerse de un estudiante.",
         "respuestas": [
           [
-            "Frecuencia absoluta",
+            "Peso",
             30
           ],
           [
-            "Frecuencia relativa",
+            "Edad",
             25
           ],
           [
-            "Frecuencia acumulada",
+            "Estatura",
             20
           ],
           [
-            "Frecuencia porcentual",
+            "Calificación",
             15
           ],
           [
-            "Frecuencia relativa acumulada",
-            10
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione un tipo de variable estadística.",
-        "respuestas": [
-          [
-            "Cualitativa nominal",
-            30
-          ],
-          [
-            "Cualitativa ordinal",
-            25
-          ],
-          [
-            "Cuantitativa discreta",
-            23
-          ],
-          [
-            "Cuantitativa continua",
-            22
-          ]
-        ]
-      },
-      {
-        "pregunta": "Mencione una suma par que pueda obtenerse al lanzar dos dados comunes.",
-        "respuestas": [
-          [
-            "2",
-            30
-          ],
-          [
-            "4",
-            25
-          ],
-          [
-            "6",
-            20
-          ],
-          [
-            "8",
-            15
-          ],
-          [
-            "10",
+            "Temperatura",
             7
           ],
           [
-            "12",
+            "Cantidad de hermanos",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un elemento que debe aparecer en una gráfica estadística.",
+        "pregunta": "Indique un experimento aleatorio.",
         "respuestas": [
           [
-            "Título",
+            "Lanzar un dado",
             30
           ],
           [
-            "Ejes",
+            "Sacar una carta",
             25
           ],
           [
-            "Escala",
+            "Lanzar una moneda",
             20
           ],
           [
-            "Etiquetas",
+            "Girar una ruleta",
             15
           ],
           [
-            "Datos",
+            "Extraer una canica",
             7
           ],
           [
-            "Leyenda",
+            "Sacar un papel de una tómbola",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Complete la frase: un evento puede ser...",
+        "respuestas": [
+          [
+            "Probable",
+            30
+          ],
+          [
+            "Seguro",
+            25
+          ],
+          [
+            "Imposible",
+            20
+          ],
+          [
+            "Posible",
+            15
+          ],
+          [
+            "Poco probable",
+            7
+          ],
+          [
+            "Equiprobable",
+            3
+          ]
+        ]
+      },
+      {
+        "pregunta": "Nombre una información que pueda organizarse en una tabla estadística.",
+        "respuestas": [
+          [
+            "Calificaciones",
+            30
+          ],
+          [
+            "Estaturas",
+            25
+          ],
+          [
+            "Edades",
+            20
+          ],
+          [
+            "Pesos",
+            15
+          ],
+          [
+            "Asistencia",
+            7
+          ],
+          [
+            "Número de hermanos",
             3
           ]
         ]
@@ -446,117 +474,117 @@ window.DATOS_JUEGO = {
     ],
     "Lenguaje y cultura matemática": [
       {
-        "pregunta": "Mencione un prefijo del sistema métrico decimal.",
+        "pregunta": "Nombre un error común al resolver una operación matemática.",
         "respuestas": [
           [
-            "Kilo",
+            "Error de signos",
             30
           ],
           [
-            "Hecto",
+            "No respetar la jerarquía de operaciones",
             25
           ],
           [
-            "Deca",
+            "Copiar mal un dato",
             20
           ],
           [
-            "Deci",
+            "Error al sumar o restar",
             15
           ],
           [
-            "Centi",
+            "No simplificar el resultado",
             7
           ],
           [
-            "Mili",
+            "Error en una multiplicación",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un símbolo utilizado en teoría de conjuntos.",
+        "pregunta": "Nombre una palabra que puede aparecer en un problema matemático.",
         "respuestas": [
           [
-            "∈",
+            "Producto",
             30
           ],
           [
-            "∉",
+            "Mitad",
             25
           ],
           [
-            "∪",
+            "Total",
             20
           ],
           [
-            "∩",
+            "Cociente",
             15
           ],
           [
-            "⊂",
+            "Doble",
             7
           ],
           [
-            "∅",
+            "Diferencia",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione una letra griega utilizada en Matemática.",
+        "pregunta": "Indique un instrumento que puede utilizarse para construir figuras geométricas.",
         "respuestas": [
           [
-            "Pi (π)",
+            "Transportador",
             30
           ],
           [
-            "Alfa (α)",
+            "Compás",
             25
           ],
           [
-            "Beta (β)",
+            "Regla",
             20
           ],
           [
-            "Delta (Δ)",
+            "Escuadra",
             15
           ],
           [
-            "Theta (θ)",
+            "Cartabón",
             7
           ],
           [
-            "Sigma (Σ)",
+            "Lápiz",
             3
           ]
         ]
       },
       {
-        "pregunta": "Mencione un sistema de numeración utilizado a lo largo de la historia.",
+        "pregunta": "Señale una acción importante antes de entregar un ejercicio de Matemática.",
         "respuestas": [
           [
-            "Hinduarábigo",
+            "Comprobar el resultado",
             30
           ],
           [
-            "Romano",
+            "Revisar el procedimiento",
             25
           ],
           [
-            "Maya",
+            "Verificar las operaciones",
             20
           ],
           [
-            "Egipcio",
+            "Leer nuevamente el problema",
             15
           ],
           [
-            "Babilónico",
+            "Escribir la respuesta",
             7
           ],
           [
-            "Chino",
+            "Revisar las unidades",
             3
           ]
         ]
@@ -565,59 +593,59 @@ window.DATOS_JUEGO = {
   },
   "rondaFinal": [
     {
-      "pregunta": "¿Cuál es el resultado de 3/8 + 1/4?",
+      "pregunta": "¿Cuál es el resultado de 5/6 − 1/3?",
       "opciones": [
-        "4/12",
-        "4/8",
-        "5/8",
-        "7/8"
+        "1/2",
+        "2/3",
+        "4/6",
+        "1/3"
       ],
-      "correcta": 2,
-      "explicacion": "1/4 equivale a 2/8. Entonces, 3/8 + 2/8 = 5/8."
+      "correcta": 0,
+      "explicacion": "1/3 equivale a 2/6. Entonces, 5/6 − 2/6 = 3/6 = 1/2."
     },
     {
-      "pregunta": "Un artículo cuesta Q150. ¿Cuánto representa el 20 % de ese precio?",
+      "pregunta": "Un artículo cuesta Q240 y aumenta un 15 %. ¿Cuál es el nuevo precio?",
       "opciones": [
-        "Q20",
-        "Q25",
-        "Q30",
-        "Q35"
-      ],
-      "correcta": 2,
-      "explicacion": "20 % de Q150 = 0.20 × 150 = Q30."
-    },
-    {
-      "pregunta": "Un rectángulo mide 12 cm de largo y 7 cm de ancho. ¿Cuál es su perímetro?",
-      "opciones": [
-        "19 cm",
-        "38 cm",
-        "84 cm",
-        "96 cm"
+        "Q264",
+        "Q276",
+        "Q280",
+        "Q288"
       ],
       "correcta": 1,
-      "explicacion": "Perímetro = 2(12 + 7) = 2(19) = 38 cm."
+      "explicacion": "El 15 % de Q240 es Q36. Entonces, Q240 + Q36 = Q276."
     },
     {
-      "pregunta": "¿Cuál es el valor de x en la ecuación 4x − 7 = 21?",
+      "pregunta": "Un triángulo tiene base de 14 cm y altura de 9 cm. ¿Cuál es su área?",
       "opciones": [
-        "5",
-        "6",
-        "7",
-        "8"
+        "63 cm²",
+        "84 cm²",
+        "126 cm²",
+        "46 cm²"
       ],
-      "correcta": 2,
-      "explicacion": "Se suma 7 a ambos lados: 4x = 28. Luego se divide entre 4: x = 7."
+      "correcta": 0,
+      "explicacion": "Área del triángulo = (base × altura) ÷ 2 = (14 × 9) ÷ 2 = 63 cm²."
     },
     {
-      "pregunta": "Los datos ordenados son 4, 6, 7, 8 y 10. ¿Cuál es la mediana?",
+      "pregunta": "¿Cuál es el valor de x en la ecuación 3x + 4 = 25?",
       "opciones": [
         "6",
         "7",
         "8",
-        "10"
+        "9"
       ],
       "correcta": 1,
-      "explicacion": "La mediana es el dato central del conjunto ordenado. El valor central es 7."
+      "explicacion": "Se resta 4: 3x = 21. Luego se divide entre 3: x = 7."
+    },
+    {
+      "pregunta": "En una bolsa hay 4 fichas verdes, 5 amarillas y 1 roja. ¿Cuál es la probabilidad de sacar una ficha amarilla?",
+      "opciones": [
+        "1/10",
+        "2/5",
+        "1/2",
+        "5/6"
+      ],
+      "correcta": 2,
+      "explicacion": "Hay 10 fichas en total y 5 son amarillas. La probabilidad es 5/10 = 1/2."
     }
   ]
 };
